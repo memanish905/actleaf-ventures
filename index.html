@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Actleaf Ventures | Technology Strategy & Transformation Advisory</title>
+  <meta name="description" content="Actleaf Ventures advises small businesses, charities, and startups on platform strategy, engineering transformation, AI adoption, delivery governance, vendor evaluation, and technology execution." />
+  <style>
+    :root {
+      --navy: #0f172a;
+      --green: #2f7d5c;
+      --light-green: #eaf5ef;
+      --gold: #d8a841;
+      --text: #334155;
+      --muted: #64748b;
+      --white: #ffffff;
+      --bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), #173b34);
+      color: var(--white);
+      padding: 28px 8% 80px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-link {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 10px 18px;
+      border-radius: 999px;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 1.2rem;
+      color: #dbeafe;
+      margin-bottom: 34px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: 999px;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #e6b94c;
+    }
+
+    main {
+      padding: 70px 8%;
+    }
+
+    section {
+      max-width: 1120px;
+      margin: 0 auto 80px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 28px;
+      border-radius: 20px;
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e2e8f0;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .highlight {
+      background: var(--light-green);
+      border-radius: 28px;
+      padding: 42px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .highlight h2 {
+      color: var(--navy);
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .pill {
+      background: var(--white);
+      color: var(--green);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 28px;
+      padding: 46px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    .contact p {
+      color: #cbd5e1;
+      max-width: 680px;
+      margin: 0 auto 24px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 30px 8% 50px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        align-items: flex-start;
+        gap: 18px;
+        flex-direction: column;
+        margin-bottom: 55px;
+      }
+
+      .highlight {
+        grid-template-columns: 1fr;
+        padding: 30px;
+      }
+
+      .contact {
+        padding: 34px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Actleaf <span>Ventures</span></div>
+      <a class="nav-link" href="mailto:hello@actleafventures.com">Contact</a>
+    </nav>
+
+    <div class="hero">
+      <div class="eyebrow">Technology Advisory for Growing Organizations</div>
+      <h1>Practical strategy. Stronger execution. Smarter technology adoption.</h1>
+      <p>
+        Actleaf Ventures helps small businesses, charities, and startups make confident technology decisions — from platform strategy and engineering transformation to AI adoption and delivery governance.
+      </p>
+      <a class="button" href="mailto:hello@actleafventures.com">Start a Conversation</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-intro">
+        We provide focused advisory and execution support for organizations that need senior technology leadership without adding unnecessary complexity.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Platform Strategy</h3>
+          <p>Assess current systems, define practical roadmaps, and guide platform decisions that support scale, reliability, and business value.</p>
+        </div>
+
+        <div class="card">
+          <h3>Engineering Transformation</h3>
+          <p>Improve delivery practices, team operating models, technical standards, and engineering ways of working.</p>
+        </div>
+
+        <div class="card">
+          <h3>AI Adoption</h3>
+          <p>Identify realistic AI use cases, establish governance, and help teams adopt AI tools responsibly and effectively.</p>
+        </div>
+
+        <div class="card">
+          <h3>Delivery Governance</h3>
+          <p>Support initiative planning, risk management, executive reporting, vendor coordination, and delivery accountability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div>
+        <h2>Built for small businesses, charities, and startups.</h2>
+        <p>
+          Whether you are modernizing systems, selecting vendors, launching a digital product, or exploring AI, Actleaf Ventures brings calm, practical guidance to help you move from idea to execution.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Technology Roadmaps</span>
+          <span class="pill">Vendor Evaluation</span>
+          <span class="pill">AI Readiness</span>
+          <span class="pill">Execution Support</span>
+          <span class="pill">Governance</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Our Approach</h3>
+        <p>
+          Clear advice, lightweight governance, measurable outcomes, and solutions that fit your organization’s size, budget, and ambition.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Ready to move your technology agenda forward?</h2>
+      <p>
+        Let’s discuss your goals, current challenges, and the right next step for your organization.
+      </p>
+      <a class="button" href="mailto:hello@actleafventures.com">Email Actleaf Ventures</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Actleaf Ventures. All rights reserved.
+  </footer>
+</body>
+</html>
